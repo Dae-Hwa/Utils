@@ -68,7 +68,7 @@ var InsertStrKeyCursor = (function(){
 
     positionNum = selectCursorPosition(elem);
     detachedString = selectDetachedString(elem.value, positionNum);
-    resultString = concatString(detachedString, "{newStr}");
+    resultString = concatString(detachedString, newStr);
 
     insertString(elem, resultString, positionNum);
   }
